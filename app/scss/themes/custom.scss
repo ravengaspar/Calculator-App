@@ -1,0 +1,48 @@
+$custom-colors: (
+	background: (
+		primary: hsl(268, 75%, 9%),
+		keypad: hsl(268, 71%, 12%),
+		screen: hsl(268, 71%, 12%),
+	),
+	background-key: (
+		primary: hsl(281, 89%, 26%),
+		secondary: hsl(268, 47%, 21%),
+		tertiary: hsl(176, 100%, 44%),
+	),
+	shadow-key: (
+		primary: hsl(290, 70%, 36%),
+		secondary: hsl(285, 91%, 52%),
+		tertiary: hsl(177, 92%, 70%),
+	),
+	key-text: (
+		primary: hsl(52, 100%, 62%),
+		secondary: hsl(0, 0%, 100%),
+		tertiary: hsl(198, 20%, 13%),
+	),
+	text: (
+		primary: hsl(52, 100%, 62%),
+		secondary: hsl(0, 0%, 100%),
+		tertiary: hsl(198, 20%, 13%),
+	),
+);
+
+// this may be redundant but this is to override prefers-color-scheme
+.custom {
+	--background-primary: var(--custom-background-primary);
+	--background-keypad: var(--custom-background-keypad);
+	--background-screen: var(--custom-background-screen);
+
+	--background-key-primary: var(--custom-background-key-primary);
+	--background-key-secondary: var(--custom-background-key-secondary);
+	--background-key-tertiary: var(--custom-background-key-tertiary);
+
+	--key-shadow-primary: var(--custom-shadow-key-primary);
+	--key-shadow-secondary: var(--custom-shadow-key-secondary);
+	--key-shadow-tertiary: var(--custom-shadow-key-tertiary);
+
+	--key-text-primary: var(--custom-key-text-primary);
+	--key-text-secondary: var(--custom-key-text-secondary);
+
+	--text-primary: var(--custom-text-primary);
+	--text-secondary: var(--custom-text-secondary);
+}

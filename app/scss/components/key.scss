@@ -1,0 +1,95 @@
+@use '../util' as *;
+
+.keypad {
+	@include breakpoint(medium) {
+		grid-template-columns: repeat(4, 6.25rem);
+	}
+}
+
+.key {
+	border: none;
+	border-radius: 0.3125rem;
+	border-bottom: 4px solid var(--key-shadow-primary);
+	background: var(--background-key-primary);
+	color: var(--key-text-primary);
+
+	// width: 3.75rem;
+	height: 4rem;
+
+	font-size: 1.75rem;
+	font-weight: 600;
+	text-align: center;
+
+	transform: scale(0.95);
+	transition: all 150ms ease-in-out;
+	&--1 {
+		grid-area: one;
+	}
+	&--2 {
+		grid-area: two;
+	}
+	&--3 {
+		grid-area: three;
+	}
+	&--4 {
+		grid-area: four;
+	}
+	&--5 {
+		grid-area: five;
+	}
+	&--6 {
+		grid-area: six;
+	}
+	&--7 {
+		grid-area: seven;
+	}
+	&--8 {
+		grid-area: eight;
+	}
+	&--9 {
+		grid-area: nine;
+	}
+	&--zero {
+		grid-area: zer;
+	}
+	&--equal {
+		grid-area: equal;
+		background: var(--background-key-tertiary);
+		border-bottom: 4px solid var(--key-shadow-tertiary);
+		color: var(--key-text-secondary);
+	}
+	&--add {
+		grid-area: plus;
+	}
+	&--minus {
+		grid-area: minus;
+	}
+	&--div {
+		grid-area: div;
+	}
+	&--mul {
+		grid-area: mul;
+	}
+	&--del {
+		grid-area: del;
+		background: var(--background-key-secondary);
+		border-bottom: 4px solid var(--key-shadow-secondary);
+		color: var(--key-text-secondary);
+		text-transform: uppercase;
+	}
+	&--res {
+		grid-area: res;
+		background: var(--background-key-secondary);
+		border-bottom: 4px solid var(--key-shadow-secondary);
+		color: var(--key-text-secondary);
+		text-transform: uppercase;
+	}
+	&--dec {
+		grid-area: dec;
+	}
+}
+
+.key:hover {
+	transform: scale(1.025);
+	box-shadow: 5px 5px hsla(35, 11%, 61%, 0.25);
+}

@@ -1,0 +1,46 @@
+$dark-colors: (
+	background: (
+		primary: hsl(222, 26%, 31%),
+		keypad: hsl(223, 31%, 20%),
+		screen: hsl(224, 36%, 15%),
+	),
+	background-key: (
+		primary: hsl(30, 25%, 89%),
+		secondary: hsl(225, 21%, 49%),
+		tertiary: hsl(6, 63%, 50%),
+	),
+	shadow-key: (
+		primary: hsl(28, 16%, 65%),
+		secondary: hsl(224, 28%, 35%),
+		tertiary: hsl(6, 70%, 34%),
+	),
+	key-text: (
+		primary: hsl(0, 0%, 31%),
+		secondary: hsl(0, 0%, 100%),
+	),
+	text: (
+		secondary: hsl(0, 0%, 31%),
+		primary: hsl(0, 0%, 100%),
+	),
+);
+
+// this may be redundant but this is to override prefers-color-scheme
+.dark {
+	--background-primary: var(--dark-background-primary);
+	--background-keypad: var(--dark-background-keypad);
+	--background-screen: var(--dark-background-screen);
+
+	--background-key-primary: var(--dark-background-key-primary);
+	--background-key-secondary: var(--dark-background-key-secondary);
+	--background-key-tertiary: var(--dark-background-key-tertiary);
+
+	--key-shadow-primary: var(--dark-shadow-key-primary);
+	--key-shadow-secondary: var(--dark-shadow-key-secondary);
+	--key-shadow-tertiary: var(--dark-shadow-key-tertiary);
+
+	--key-text-primary: var(--dark-key-text-primary);
+	--key-text-secondary: var(--dark-key-text-secondary);
+
+	--text-primary: var(--dark-text-primary);
+	--text-secondary: var(--dark-text-secondary);
+}

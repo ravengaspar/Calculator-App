@@ -1,0 +1,62 @@
+@use '../util' as *;
+
+.header {
+	margin-top: 1.75rem;
+	grid-area: head;
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	&__title {
+		font-size: 2rem;
+	}
+	&__subtitle {
+		display: grid;
+		margin-right: 1.5em;
+		place-items: center;
+		font-size: 1.125rem;
+		color: var(--text-primary);
+		letter-spacing: 0.2rem;
+		text-transform: uppercase;
+	}
+
+	@include breakpoint-down(small) {
+		&__subtitle {
+			opacity: 0;
+			display: none;
+		}
+	}
+}
+
+.output {
+	grid-area: output;
+	grid-column: 1 / -1;
+	min-height: 15vh;
+	background: var(--background-screen);
+	border-radius: 10px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 1rem;
+	word-wrap: break-word;
+	word-break: break-all;
+	letter-spacing: 0.125rem;
+}
+
+.previous {
+	&-operand {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+}
+.current {
+	&-operand {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+}
+
+.header,
+.header__subtitle,
+.output {
+	color: var(--text-primary);
+}

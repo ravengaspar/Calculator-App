@@ -1,0 +1,24 @@
+@use '../themes/index' as *;
+
+:root {
+	/* Dark Color Scheme*/
+	@each $color, $attributes in $dark-colors {
+		@each $attribute, $value in $attributes {
+			--dark-#{$color}-#{$attribute}: #{$value};
+		}
+	}
+
+	/* Light Color Scheme */
+	@each $color, $attributes in $light-colors {
+		@each $attribute, $value in $attributes {
+			--light-#{$color}-#{$attribute}: #{$value};
+		}
+	}
+
+	/* Custom Color Scheme */
+	@each $color, $attributes in $custom-colors {
+		@each $attribute, $value in $attributes {
+			--custom-#{$color}-#{$attribute}: #{$value};
+		}
+	}
+}

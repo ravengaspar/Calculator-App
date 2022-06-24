@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+.calculator-grid {
+	background: var(--background-primary);
+	padding: 2rem;
+	border-radius: 20px;
+	display: grid;
+
+	gap: 1rem;
+	grid-template-columns: repeat(4, 4.25rem);
+	grid-template-rows: 1fr auto auto;
+	grid-template-areas:
+		'head head head head'
+		'output output output output'
+		'keypad keypad keypad keypad';
+}
+.calculator-grid {
+	@include breakpoint(medium) {
+		grid-template-columns: repeat(4, 7rem);
+	}
+}
+
