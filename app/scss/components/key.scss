@@ -88,6 +88,11 @@
 		grid-area: dec;
 	}
 }
+.key {
+	@include breakpoint-down(small) {
+		font-size: 1.5rem;
+	}
+}
 
 .key:hover {
 	transform: scale(1.025);
