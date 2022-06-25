@@ -88,9 +88,10 @@
 		grid-area: dec;
 	}
 }
-.key {
-	@include breakpoint-down(small) {
-		font-size: 1.5rem;
+
+@include breakpoint-down(small) {
+	.key {
+		font-size: 1.5em;
 	}
 }
 
