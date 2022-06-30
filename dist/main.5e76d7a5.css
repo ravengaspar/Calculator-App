@@ -568,7 +568,7 @@ body {
 @media (max-width: 39.9988em) {
   .keypad {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 5rem);
+    grid-template-rows: repeat(4, auto);
   }
   .key {
     height: 4rem;

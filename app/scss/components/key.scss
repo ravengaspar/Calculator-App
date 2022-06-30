@@ -91,7 +91,7 @@
 @include breakpoint-down(small) {
 	.keypad {
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 5rem);
+		grid-template-rows: repeat(4, auto);
 	}
 
 	.key {
