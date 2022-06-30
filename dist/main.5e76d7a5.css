@@ -93,7 +93,6 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  max-height: 100vh;
   background-image: url(/bg-solution.efd8a688.png);
   background-blend-mode: difference;
   background-size: cover;
@@ -476,7 +475,7 @@ body {
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr;
-    height: auto;
+    height: 100vh;
     width: 100vw;
     border-radius: 0;
   }
