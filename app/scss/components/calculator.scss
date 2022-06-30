@@ -20,3 +20,8 @@
 	}
 }
 
+@include breakpoint-down(small) {
+	.calculator-grid {
+		padding: 0rem;
+	}
+}

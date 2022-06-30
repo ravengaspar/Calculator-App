@@ -92,6 +92,10 @@
 @include breakpoint-down(small) {
 	.key {
 		font-size: 1.25em;
+
+		&--del {
+			text-align: center;
+		}
 	}
 }
 
