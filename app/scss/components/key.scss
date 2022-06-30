@@ -1,7 +1,6 @@
 @use '../util' as *;
-
-.keypad {
-	@include breakpoint(medium) {
+@include breakpoint(medium) {
+	.keypad {
 		grid-template-columns: repeat(4, 6.25rem);
 	}
 }
@@ -90,11 +89,17 @@
 }
 
 @include breakpoint-down(small) {
+	.keypad {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 5rem);
+	}
+
 	.key {
-		font-size: 1.25em;
+		font-size: 2em;
+		height: 4rem;
 
 		&--del {
-			text-align: center;
+			font-size: 1.5em;
 		}
 	}
 }
