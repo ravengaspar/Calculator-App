@@ -476,7 +476,7 @@ body {
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr;
-    height: 100%;
+    height: auto;
     width: 100vw;
     border-radius: 0;
   }
@@ -571,7 +571,6 @@ body {
     grid-template-rows: repeat(4, 5rem);
   }
   .key {
-    font-size: 2em;
     height: 4rem;
   }
   .key--del {
