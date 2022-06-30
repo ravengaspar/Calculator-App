@@ -371,11 +371,12 @@ body {
 
 @media (max-width: 39.9988em) {
   .header {
+    margin-top: 0;
     align-items: center;
-    height: 10vh;
+    min-height: 10vh;
   }
   .output {
-    min-height: 20vh;
+    min-height: 15vh;
   }
 }
 .toggle {
