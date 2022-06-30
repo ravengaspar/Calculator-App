@@ -84,7 +84,6 @@ select {
   }
 }
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   letter-spacing: 0.08em;
@@ -463,6 +462,15 @@ body {
   }
 }
 
+@media (max-width: 39.9988em) {
+  .calculator-grid {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    border-radius: 0;
+  }
+}
 @media (min-width: 40em) {
   .keypad {
     grid-template-columns: repeat(4, 6.25rem);
@@ -479,7 +487,7 @@ body {
   font-size: 1.75rem;
   font-weight: 600;
   text-align: center;
-  transform: scale(0.95);
+  transform: scale(0.9);
   transition: all 150ms ease-in-out;
 }
 .key--1 {
@@ -550,11 +558,14 @@ body {
 
 @media (max-width: 39.9988em) {
   .key {
-    font-size: 1.5em;
+    font-size: 1.25em;
+  }
+  .key--del {
+    text-align: center;
   }
 }
 .key:hover {
-  transform: scale(1.025);
+  transform: scale(1);
   box-shadow: 5px 5px hsla(35deg, 11%, 61%, 0.25);
 }
 
