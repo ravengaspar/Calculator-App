@@ -62,9 +62,14 @@
 }
 
 @include breakpoint-down(small) {
+	body {
+		overflow: hidden;
+		height: auto;
+	}
+
 	.header {
 		align-items: center;
-		margin-top: -17.5%;
+		margin-top: -2.5rem;
 		height: 5.5rem;
 	}
 

@@ -367,9 +367,13 @@ body {
 }
 
 @media (max-width: 39.9988em) {
+  body {
+    overflow: hidden;
+    height: auto;
+  }
   .header {
     align-items: center;
-    margin-top: -7.5%;
+    margin-top: -2.5rem;
     height: 5.5rem;
   }
   .output {
