@@ -1,9 +1,6 @@
 @use '../util' as *;
 
 .keypad {
-	max-height: 55vh;
-	max-width: 80vw;
-	margin-top: 1.5rem;
 	border-radius: 0.625rem;
 	place-content: center;
 	padding: 1rem;
@@ -19,4 +16,6 @@
 		'one two three minus'
 		'dec zer div mul'
 		'res res equal equal';
+	margin-top: 1rem;
 }
+

@@ -1,14 +1,13 @@
 body {
 	overflow: hidden;
-	margin: 1rem auto;
-	padding: 0;
+	margin: 0 auto;
 	letter-spacing: 0.08em;
 	font-family: 'League Spartan', sans-serif;
 	font-weight: 700;
 	background-color: var(--background-primary);
 	display: grid;
 	place-content: center;
-	max-height: 100vh;
+	min-height: 100vh;
 	background-image: url(/app/images/bg-solution.png);
 	background-blend-mode: difference;
 	background-size: cover;

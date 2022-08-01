@@ -8,7 +8,7 @@
 	color: var(--key-text-primary);
 
 	// width: 3.75rem;
-	height: clamp(2.25rem, 5vw, 3rem);
+	height: clamp(3rem, 5vw, 4rem);
 	width: auto;
 
 	font-size: 1.75rem;
@@ -86,8 +86,6 @@
 
 @include breakpoint-down(small) {
 	.key {
-		height: 3rem;
-
 		&--del {
 			font-size: 1.25em;
 		}

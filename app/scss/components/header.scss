@@ -1,7 +1,6 @@
 @use '../util' as *;
 
 .header {
-	margin-top: 1.75rem;
 	grid-area: head;
 	display: grid;
 	grid-template-columns: 1fr auto auto;
@@ -29,7 +28,7 @@
 .output {
 	grid-area: output;
 	grid-column: 1 / -1;
-	height: 15vh;
+	height: clamp(15vh, 15vw, 20vh);
 	background: var(--background-screen);
 	border-radius: 10px;
 	display: flex;
@@ -69,7 +68,6 @@
 	}
 
 	.output {
-		min-height: 18vh;
-		padding: 2rem;
+		min-height: 15vh;
 	}
 }
