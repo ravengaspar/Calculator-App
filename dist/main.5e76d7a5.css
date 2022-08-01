@@ -338,12 +338,12 @@ body {
 .output {
   grid-area: output;
   grid-column: 1/-1;
-  height: clamp(5vh, 15vw, 20vh);
+  height: clamp(15vh, 15vw, 20vh);
   background: var(--background-screen);
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
   padding: 1rem;
   word-wrap: break-word;
@@ -352,12 +352,12 @@ body {
 }
 
 .previous-operand {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 1.75rem);
   font-weight: 400;
 }
 
 .current-operand {
-  font-size: 3rem;
+  font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 700;
 }
 
@@ -467,19 +467,13 @@ body {
 }
 .calculator-grid {
   background: var(--background-primary);
-  padding: 4rem;
+  padding: 3rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(4rem, 7rem));
   gap: clamp(0.5rem, 6vw, 1rem);
   grid-template-areas: "head head head head" "output output output output" "keypad keypad keypad keypad";
 }
 
-@media (min-width: 40em) {
-  .calculator-grid {
-    border-radius: 0;
-    place-content: center;
-  }
-}
 @media (max-width: 39.9988em) {
   .keypad {
     height: 22rem;
@@ -490,6 +484,12 @@ body {
     height: 100vh;
     width: 100vw;
     border-radius: 0;
+    place-content: center;
+  }
+}
+@media (min-width: 40em) {
+  .calculator-grid {
+    border-radius: 20px;
     place-content: center;
   }
 }
@@ -504,7 +504,7 @@ body {
   border-bottom: 4px solid var(--key-shadow-primary);
   background: var(--background-key-primary);
   color: var(--key-text-primary);
-  height: clamp(3rem, 5vw, 4rem);
+  height: clamp(4rem, 5vw, 4rem);
   width: auto;
   font-size: 1.75rem;
   font-weight: 600;

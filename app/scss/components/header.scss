@@ -30,12 +30,12 @@
 .output {
 	grid-area: output;
 	grid-column: 1 / -1;
-	height: clamp(5vh, 15vw, 20vh);
+	height: clamp(15vh, 15vw, 20vh);
 	background: var(--background-screen);
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-end;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-direction: column;
 	padding: 1rem;
 	word-wrap: break-word;
@@ -45,13 +45,13 @@
 
 .previous {
 	&-operand {
-		font-size: 1.5rem;
+		font-size: clamp(1.5rem, 5vw, 1.75rem);
 		font-weight: 400;
 	}
 }
 .current {
 	&-operand {
-		font-size: 3rem;
+		font-size: clamp(3rem, 5vw, 5rem);
 		font-weight: 700;
 	}
 }

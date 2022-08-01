@@ -2,22 +2,14 @@
 
 .calculator-grid {
 	background: var(--background-primary);
-	padding: 4rem;
+	padding: 3rem;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(4rem, 7rem));
-
 	gap: clamp(0.5rem, 6vw, 1rem);
 	grid-template-areas:
 		'head head head head'
 		'output output output output'
 		'keypad keypad keypad keypad';
-}
-
-@include breakpoint(medium) {
-	.calculator-grid {
-		border-radius: 0;
-		place-content: center;
-	}
 }
 
 @include breakpoint-down(small) {
@@ -31,6 +23,13 @@
 		height: 100vh;
 		width: 100vw;
 		border-radius: 0;
+		place-content: center;
+	}
+}
+
+@include breakpoint(medium) {
+	.calculator-grid {
+		border-radius: 20px;
 		place-content: center;
 	}
 }
