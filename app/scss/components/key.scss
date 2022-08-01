@@ -13,7 +13,7 @@
 	color: var(--key-text-primary);
 
 	// width: 3.75rem;
-	height: 4rem;
+	height: clamp(2rem, 5vw, 4rem);
 
 	font-size: 1.75rem;
 	font-weight: 600;
@@ -95,7 +95,7 @@
 	}
 
 	.key {
-		height: 4rem;
+		height: clamp(3rem, 5vw, 4rem);
 
 		&--del {
 			font-size: 1.25em;

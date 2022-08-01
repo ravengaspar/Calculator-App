@@ -21,6 +21,10 @@
 }
 
 @include breakpoint-down(small) {
+	body {
+		max-height: 90vh;
+	}
+
 	.calculator-grid {
 		justify-content: center;
 		grid-template-columns: repeat(4, 1fr);
