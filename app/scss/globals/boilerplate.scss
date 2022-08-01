@@ -6,7 +6,7 @@ body {
 	background-color: var(--background-primary);
 	display: grid;
 	place-content: center;
-	min-height: 100vh;
+	height: 100vh;
 	background-image: url(/app/images/bg-solution.png);
 	background-blend-mode: difference;
 	background-size: cover;
