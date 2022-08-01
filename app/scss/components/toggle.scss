@@ -80,3 +80,9 @@
 		right: 0.1875rem;
 	}
 }
+
+@include breakpoint-down(small) {
+	.toggle {
+		display: none;
+	}
+}

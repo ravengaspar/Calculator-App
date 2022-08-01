@@ -3,6 +3,7 @@
 .header {
 	grid-area: head;
 	display: grid;
+	align-items: center;
 	grid-template-columns: 1fr auto auto;
 	grid-template-rows: minmax(5rem, 8rem) auto auto;
 	&__title {

@@ -312,6 +312,7 @@ body {
 .header {
   grid-area: head;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr auto auto;
   grid-template-rows: minmax(5rem, 8rem) auto auto;
 }
@@ -373,7 +374,7 @@ body {
   }
   .header {
     align-items: center;
-    margin-top: -4.5rem;
+    margin-top: -6.5rem;
     height: 5.5rem;
   }
   .output {
@@ -459,6 +460,11 @@ body {
   right: 0.1875rem;
 }
 
+@media (max-width: 39.9988em) {
+  .toggle {
+    display: none;
+  }
+}
 .calculator-grid {
   background: var(--background-primary);
   padding: 4rem;
