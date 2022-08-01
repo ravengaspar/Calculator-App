@@ -64,6 +64,8 @@
 @include breakpoint-down(small) {
 	.header {
 		align-items: center;
+		margin-top: -1.5rem;
+		height: 5.5rem;
 	}
 
 	.output {
