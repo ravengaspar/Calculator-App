@@ -69,12 +69,12 @@
 
 	.header {
 		align-items: center;
-		margin-top: -2.5rem;
+		margin-top: -4.5rem;
 		height: 5.5rem;
 	}
 
 	.output {
-		height: auto;
+		min-height: 15vh;
 	}
 
 	.keypad {
