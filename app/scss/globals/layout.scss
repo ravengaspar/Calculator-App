@@ -1,6 +1,7 @@
 @use '../util' as *;
 
 .keypad {
+	height: 40vh;
 	margin-top: 1.5rem;
 	border-radius: 0.625rem;
 	place-content: center;
@@ -8,9 +9,8 @@
 	grid-area: keypad;
 	display: grid;
 	background: var(--background-keypad);
-	gap: 1rem;
-	grid-template-columns: repeat(4, 3.75rem);
-	grid-template-rows: repeat(5, 4rem);
+	grid-template-columns: repeat(4, 1fr);
+	gap: clamp(0.5rem, 10vw, 1rem);
 	grid-template-areas:
 		'seven eight nine del'
 		'four five six plus'
@@ -18,6 +18,3 @@
 		'dec zer div mul'
 		'res res equal equal';
 }
-
-
-
