@@ -22,11 +22,15 @@
 }
 
 @include breakpoint-down(small) {
-	body {
-		line-height: 1;
+
+
+	.keypad {
+		margin-top: -3rem;
+		height: 22rem;
 	}
 
 	.calculator-grid {
+		gap: 0.5rem;
 		padding: 2.5rem;
 		height: 100vh;
 		width: 100vw;
