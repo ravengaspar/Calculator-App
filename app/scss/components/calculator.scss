@@ -13,12 +13,6 @@
 		'keypad keypad keypad keypad';
 }
 
-@include breakpoint(large) {
-	.calculator-grid {
-		border-radius: 20px;
-	}
-}
-
 @include breakpoint(medium) {
 	.calculator-grid {
 		border-radius: 0;
@@ -28,7 +22,6 @@
 
 @include breakpoint-down(small) {
 	.keypad {
-		margin-top: -3rem;
 		height: 22rem;
 	}
 
@@ -38,5 +31,12 @@
 		height: 100vh;
 		width: 100vw;
 		border-radius: 0;
+		place-content: center;
+	}
+}
+
+@include breakpoint(large) {
+	.calculator-grid {
+		border-radius: 20px;
 	}
 }

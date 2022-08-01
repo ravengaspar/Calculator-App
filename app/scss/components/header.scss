@@ -4,6 +4,7 @@
 	grid-area: head;
 	display: grid;
 	grid-template-columns: 1fr auto auto;
+	grid-template-rows: minmax(5rem, 8rem) auto auto;
 	&__title {
 		font-size: 2rem;
 	}
@@ -62,15 +63,11 @@
 
 @include breakpoint-down(small) {
 	.header {
-		margin-top: -3rem;
-		margin-bottom: -1.5rem;
 		align-items: center;
 	}
 
 	.output {
-		margin-top: -1rem;
-		margin-bottom: -3rem;
-		height: 14vh;
+		height: auto;
 	}
 
 	.keypad {
