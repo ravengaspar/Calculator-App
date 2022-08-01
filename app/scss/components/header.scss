@@ -62,11 +62,19 @@
 
 @include breakpoint-down(small) {
 	.header {
+		margin-top: -3rem;
 		margin-bottom: -1.5rem;
 		align-items: center;
 	}
 
 	.output {
+		margin-top: -1rem;
+		margin-bottom: -3rem;
 		height: 14vh;
+	}
+
+	.keypad {
+		padding: 0.5rem;
+		gap: 0.5rem;
 	}
 }
