@@ -84,7 +84,8 @@ select {
   }
 }
 body {
-  margin: 0;
+  overflow: hidden;
+  margin: 1rem auto;
   padding: 0;
   letter-spacing: 0.08em;
   font-family: "League Spartan", sans-serif;
@@ -490,7 +491,7 @@ body {
   border-bottom: 4px solid var(--key-shadow-primary);
   background: var(--background-key-primary);
   color: var(--key-text-primary);
-  height: auto;
+  height: clamp(2.25rem, 5vw, 3rem);
   width: auto;
   font-size: 1.75rem;
   font-weight: 600;

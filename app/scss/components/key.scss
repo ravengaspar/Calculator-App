@@ -8,7 +8,7 @@
 	color: var(--key-text-primary);
 
 	// width: 3.75rem;
-	height: auto;
+	height: clamp(2.25rem, 5vw, 3rem);
 	width: auto;
 
 	font-size: 1.75rem;
