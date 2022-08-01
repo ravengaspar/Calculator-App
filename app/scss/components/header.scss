@@ -19,6 +19,7 @@
 	}
 
 	@include breakpoint-down(small) {
+
 		&__subtitle {
 			opacity: 0;
 			display: none;
@@ -41,6 +42,7 @@
 	word-break: break-all;
 	letter-spacing: 0.125rem;
 }
+
 
 .previous {
 	&-operand {
@@ -66,9 +68,11 @@
 		margin-top: 0;
 		align-items: center;
 		min-height: 10vh;
+		
 	}
 
 	.output {
-		min-height: 15vh;
+		min-height: 18vh;
+		padding: 2rem;
 	}
 }
